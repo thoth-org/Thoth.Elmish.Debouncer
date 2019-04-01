@@ -1,0 +1,11 @@
+{
+    "private": true,
+    "devDependencies": {
+        "chalk": "^2.4.2",
+        "changelog-parser": "^2.7.0",
+        "request": "^2.88.0",
+        "request-promise-native": "^1.0.7",
+        "shelljs": "^0.8.3",
+        "simple-git": "^1.110.0"
+    }
+}
