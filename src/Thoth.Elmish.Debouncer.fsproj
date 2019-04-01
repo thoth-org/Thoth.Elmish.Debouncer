@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Description>Toolbox for working with Elmish applications</Description>
-    <PackageProjectUrl>https://github.com/MangelMaxime/Thoth</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/MangelMaxime/Thoth/blob/master/LICENSE.md</PackageLicenseUrl>
-    <RepositoryUrl>https://github.com/MangelMaxime/Thoth</RepositoryUrl>
+    <Description>Debouncer implementation for Elmish applications</Description>
+    <PackageProjectUrl>https://github.com/thoth-org/Thoth.Elmish.Debouncer</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/thoth-org/Thoth.Elmish.Debouncer/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/thoth-org/Thoth.Elmish.Debouncer</RepositoryUrl>
     <PackageTags>fable;fsharp;json</PackageTags>
     <Authors>Maxime Mangel</Authors>
-    <Version>0.1.1</Version>
+    <Version>1.0.0-beta-001</Version>
   </PropertyGroup>
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
