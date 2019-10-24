@@ -34,8 +34,8 @@ The demo works as follows:
 *[View the code](https://github.com/MangelMaxime/Thoth/blob/master/demos/Thoth.Elmish.Demo/src/Debouncer.fs)*
 </div>
 
-<script type="text/javascript" src="/Thoth.Elmish.FormBuilder/demo/vendors.js"></script>
-<script type="text/javascript" src="/Thoth.Elmish.FormBuilder/demo/demo.js"></script>
+<script type="text/javascript" src="/Thoth.Elmish.Debouncer/demo/vendors.js"></script>
+<script type="text/javascript" src="/Thoth.Elmish.Debouncer/demo/demo.js"></script>
 <script type="text/javascript">
     startDemo("debouncer_demo");
 </script>
