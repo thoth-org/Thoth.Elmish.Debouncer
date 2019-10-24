@@ -1,0 +1,7 @@
+$body-size: 14px;
+
+@import './../../node_modules/bulma/bulma.sass';
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: .5em;
+}
