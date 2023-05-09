@@ -1,0 +1,61 @@
+{
+    "source": "docs",
+    "output": "docs_deploy",
+    "siteMetadata": {
+        "title": "Thoth.Elmish.Debouncer",
+        "url": "https://thoth-org.github.io/",
+        "baseUrl": "/Thoth.Elmish.Debouncer/",
+        "editUrl" : "https://github.com/thoth-org/Thoth.Elmish.Debouncer/edit/master/docs"
+    },
+    "navbar": {
+        "start": [
+            {
+                "url": "/Thoth.Elmish.Debouncer/changelog.html",
+                "label": "Changelog"
+            },
+            {
+                "url": "https://gitter.im/fable-compiler/Fable",
+                "label": "Support"
+            },
+            {
+                "url": "https://www.patreon.com/MangelMaxime",
+                "icon": "fab fa-patreon",
+                "label": "Donate",
+                "iconColor": "#ff424b"
+            }
+        ],
+        "end": [
+            {
+                "url": "https://github.com/thoth-org/Thoth.Elmish.Debouncer",
+                "icon": "fab fa-github",
+                "label": "GitHub"
+            },
+            {
+                "url": "https://twitter.com/MangelMaxime",
+                "icon": "fab fa-twitter",
+                "label": "Twitter"
+            }
+        ]
+    },
+    "remarkPlugins": [
+        {
+            "resolve": "gatsby-remark-vscode",
+            "property": "remarkPlugin",
+            "options": {
+                "theme": "Atom One Light",
+                "extensions": [
+                    "vscode-theme-onelight"
+                ]
+            }
+        },
+        {
+            "resolve": "remark-github",
+            "options": {
+                "repository": "MangelMaxime/Nacara"
+            }
+        }
+    ],
+    "layouts": [
+        "nacara-layout-standard"
+    ]
+}

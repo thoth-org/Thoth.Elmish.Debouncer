@@ -1,0 +1,23 @@
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
+// https://vitejs.dev/config/
+export default defineConfig({
+    plugins: [react()],
+    server: {
+        watch: {
+            ignored: ["**/*.fs"],
+        },
+    },
+    // We need stable names because we manually include the files
+    // in the documentation website
+    build: {
+        rollupOptions: {
+            output: {
+                entryFileNames: `assets/[name].js`,
+                chunkFileNames: `assets/[name].js`,
+                assetFileNames: `assets/[name].[ext]`,
+            },
+        },
+    },
+});
