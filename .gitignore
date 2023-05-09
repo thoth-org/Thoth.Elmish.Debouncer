@@ -47,3 +47,6 @@ dist/
 .ionide/
 
 docs_deploy/
+
+*.fs.js
+*.fs.js.map

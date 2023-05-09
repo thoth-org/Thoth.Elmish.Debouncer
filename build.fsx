@@ -257,7 +257,7 @@ pipeline "Release" {
 
     whenAll {
         envVar "NUGET_KEY"
-        envVar "GITHUB_TOKEN"
+        envVar "GITHUB_TOKEN_THOTH_ORG"
     }
 
     stage "Build docs site" {
@@ -301,7 +301,7 @@ pipeline "Release" {
             Git.Commit.exec root commitMsg
             Git.Branches.push root
 
-            let token = ctx.GetEnvVar "GITHUB_TOKEN"
+            let token = ctx.GetEnvVar "GITHUB_TOKEN_THOTH_ORG"
 
             GitHub.createClientWithToken token
             |> GitHub.draftNewRelease gitOwner repoName version (Changelog.isPreRelease version) (Changelog.getNotes version)
