@@ -3,8 +3,6 @@ title: Thoth.Elmish.Debouncer
 layout: standard
 ---
 
-[[toc]]
-
 # Debouncer
 
 ## Kezako ?

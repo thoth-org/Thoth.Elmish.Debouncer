@@ -250,15 +250,10 @@ pipeline "Format" {
 
 }
 
-pipeline "Release" {
+pipeline "ReleaseDocs" {
     Stages.clean
     Stages.pnpmInstall
     Stages.dotnetRestore
-
-    whenAll {
-        envVar "NUGET_KEY"
-        envVar "GITHUB_TOKEN_THOTH_ORG"
-    }
 
     stage "Build docs site" {
         run "npx nacara"
@@ -280,6 +275,19 @@ pipeline "Release" {
 
     stage "Publish docs" {
         run "npx gh-pages -d docs_deploy"
+    }
+
+    runIfOnlySpecified
+}
+
+pipeline "ReleasePackage" {
+    Stages.clean
+    Stages.pnpmInstall
+    Stages.dotnetRestore
+
+    whenAll {
+        envVar "NUGET_KEY"
+        envVar "GITHUB_TOKEN_THOTH_ORG"
     }
 
     stage "Publish nuget package" {
